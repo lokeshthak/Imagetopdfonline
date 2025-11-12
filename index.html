@@ -49,8 +49,8 @@
         
         /* --- नया LOGO स्टाइल --- */
         .header-logo {
-            max-height: 60px; /* लोगो की ऊंचाई सेट करें */
-            margin-bottom: 10px; /* लोगो और टेक्स्ट के बीच में जगह */
+            max-height: 90px; /* लोगो की ऊंचाई सेट करें */
+            margin-bottom: 50px; /* लोगो और टेक्स्ट के बीच में जगह */
         }
         
         .header h1 { margin: 0; font-size: 2.2em; color: var(--dark-blue); }
@@ -189,7 +189,7 @@
             }
 
             convertBtn.disabled = true;
-            convertBtn.textContent = 'बदल रहा है...';
+            convertBtn.textContent = 'Converting...';
 
             try {
                 // स्टेप 1: jsPDF का उपयोग करके इमेज के साथ एक PDF बनाएं
@@ -254,7 +254,7 @@
                 alert("क्षमा करें, PDF बनाने में कोई समस्या हुई।");
             } finally {
                 convertBtn.disabled = false;
-                convertBtn.textContent = 'PDF में बदलें और डाउनलोड करें';
+                convertBtn.textContent = 'Convert PDF Download';
             }
         });
     </script>
