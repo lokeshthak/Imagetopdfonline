@@ -47,8 +47,8 @@
         
         /* --- नया LOGO स्टाइल --- */
         .header-logo {
-            max-height: 60px; /* लोगो की ऊंचाई सेट करें */
-            margin-bottom: 10px; /* लोगो और टेक्स्ट के बीच में जगह */
+            max-height: 80px; /* लोगो की ऊंचाई सेट करें */
+            margin-bottom: 30px; /* लोगो और टेक्स्ट के बीच में जगह */
         }
         
         .header h1 { margin: 0; font-size: 2.2em; color: var(--dark-blue); }
@@ -145,7 +145,7 @@
             </div>
             <div class="option-group">
                 <label for="passwordInput">Password protection(Optional):</label>
-                <input type="password" id="passwordInput" placeholder="PDF को सुरक्षित करें">
+                <input type="password" id="passwordInput" placeholder="Protect PDF">
             </div>
         </div>
 
@@ -182,12 +182,12 @@
 
         convertBtn.addEventListener('click', async function() {
             if (!selectedFile) {
-                alert('कृपया पहले एक इमेज चुनें!');
+                alert('please first choose image!');
                 return;
             }
 
             convertBtn.disabled = true;
-            convertBtn.textContent = 'बदल रहा है...';
+            convertBtn.textContent = 'Converting...';
 
             try {
                 const { jsPDF } = window.jspdf;
@@ -240,10 +240,10 @@
 
             } catch (error) {
                 console.error("PDF बनाने में त्रुटि:", error);
-                alert("क्षमा करें, PDF बनाने में कोई समस्या हुई।");
+                alert("Sorry, PDF बनाने में कोई समस्या हुई।");
             } finally {
                 convertBtn.disabled = false;
-                convertBtn.textContent = 'PDF में बदलें और डाउनलोड करें';
+                convertBtn.textContent = 'Convert PDF download;
             }
         });
     </script>
