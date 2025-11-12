@@ -125,28 +125,28 @@
             <img src="logo.png" alt="Website Logo" class="header-logo">
             
             <h1>Image to PDF Convertor pro </h1>
-            <p>अपनी इमेज को PDF में बदलें, कंप्रेस करें और सुरक्षित करें</p>
+            <p>Your Image Convert to PDF , Compress And password protection Option</p>
         </div>
 
         <input type="file" id="imageInput" accept="image/png, image/jpeg, image/jpg">
-        <label for="imageInput" class="upload-label">🖼️ Choose image,JPG file </label>
+        <label for="imageInput" class="upload-label"> Choose image,JPG file </label>
         
         <p id="fileName"></p>
         <img id="imagePreview" src="#" alt="Image Preview">
         
         <!-- नए फीचर्स -->
         <div class="options" id="optionsDiv" style="display: none;">
-            <h3>अतिरिक्त विकल्प</h3>
+            <h3>Advance Options</h3>
             <div class="option-group">
-                <label for="qualitySelect">कंप्रेशन (गुणवत्ता):</label>
+                <label for="qualitySelect">Compress (Size):</label>
                 <select id="qualitySelect">
-                    <option value="NONE">उच्च (कोई कंप्रेशन नहीं)</option>
-                    <option value="MEDIUM" selected>मध्यम (संतुलित)</option>
-                    <option value="FAST">निम्न (छोटी फाइल)</option>
+                    <option value="NONE">Without Compress(Not)</option>
+                    <option value="MEDIUM" selected>Medium (Balance)</option>
+                    <option value="FAST">High (Samll size)</option>
                 </select>
             </div>
             <div class="option-group">
-                <label for="passwordInput">पासवर्ड (वैकल्पिक):</label>
+                <label for="passwordInput">Password protection(Optional):</label>
                 <input type="password" id="passwordInput" placeholder="PDF को सुरक्षित करें">
             </div>
         </div>
